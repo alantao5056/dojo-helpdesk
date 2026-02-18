@@ -67,7 +67,7 @@ form {
     rounded-md 
     block 
     mx-auto 
-    min-w-fit w-1/4;
+    min-w-fit w-1/2;
 }
 form label {
   @apply block;
@@ -78,6 +78,7 @@ form select {
   @apply 
     block 
     mt-2 my-4 px-2 py-1 
+    bg-white
     rounded-sm w-full;
 }
 form button {
