@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import DeleteTicketButton from './DeleteTicketButton';
 
 async function getTickets() {
   // imitate delay
@@ -22,6 +23,7 @@ export default async function TicketList() {
               {ticket.priority} priority
             </div>
           </Link>
+          <DeleteTicketButton ticketId={ticket.id} />
         </div>
       ))}
 

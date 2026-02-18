@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import DeleteTicketButton from "../DeleteTicketButton";
 
 export async function generateStaticParams() : Promise<{ id: string }[]> {
   // [{id: '1'}, {id: '2'}, ...]
@@ -40,6 +41,7 @@ export default async function TicketDetails({ params }: { params: { id: string }
         <div className={`pill ${ticket.priority}`}>
           {ticket.priority} priority
         </div>
+        <DeleteTicketButton ticketId={id} />
       </div>
     </main>
   )
